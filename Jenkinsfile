@@ -22,7 +22,7 @@ pipeline
             steps
             {
                sh label: '', script: '''
-scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.45.245:/var/lib/tomcat8/webapps/newtestapp.war'''
+scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.21.1.214:/var/lib/tomcat8/webapps/newtestapp.war'''
             }
         }
         stage('ContinuousTesting_Master')
